@@ -11,7 +11,7 @@ def hello():
     html = "<h3>Hello {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>"
 
-    time.sleep(1)
+    time.sleep(0.01)
 
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname())
 
